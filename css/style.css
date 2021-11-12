@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+#intro-example {
+    height: 700px;
+  }
+
+  /* Height for devices larger than 992px */
+  @media (min-width: 992px) {
+    #intro-example {
+      height: 500px;
+    }
+  }
+
+  .color-title {
+      color: #212121;
+  }
+
+
+.border-card {
+    border: 3px solid #351d48;
+   border-radius: 25px;;
+}
