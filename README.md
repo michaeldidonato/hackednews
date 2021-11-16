@@ -77,4 +77,4 @@ showUrl.appendChild(buttonUrl);
 Distributed under the MIT License. See LICENSE.txt for more information.
 
 ## Acknowledgments
-A special thank goes to [Hacker News API](https://github.com/HackerNews/API)  that allows me to develop this amazing app and create somethig very important for me. 
+A special thank goes to [Hacker News API](https://github.com/HackerNews/API)  that allowed me to develop this amazing app and create somethig very important for me. 
