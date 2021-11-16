@@ -9,7 +9,7 @@ This web app allows you to read and load the most recent tecnology news from all
 * Google Font 
 
 ## Istallation
-1. Clone the repo
+1. Clone the repo: 
 ```sh
 git clone https://github.com/michaeldidonato/hackednews.git/
 ```
