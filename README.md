@@ -12,7 +12,7 @@ This web app allows you to read and load the most recent tecnology news from all
 ## Istallation
 1. Clone the repo: 
 ```sh 
-gh repo clone michaeldidonato/hackednews
+git clone https://github.com/michaeldidonato/hackednews.git
 ```
 2. Open index.html file on broswer
 
