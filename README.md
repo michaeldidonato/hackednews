@@ -18,4 +18,6 @@ git clone https://github.com/michaeldidonato/hackednews.git/
 
 3. Otherwise click the following link to try the app online: https://michaeldidonato.github.io/hackednews/
 
+## How it works and Usage
+At the startup the app load the first 10 news calling the API, it shows title date and button where the user will click to read the page
 
