@@ -29,8 +29,7 @@ let showUrl = document.createElement('a');
 showUrl.setAttribute('href', url);
 divCard.appendChild(showUrl);
 let buttonUrl = document.createElement('button');
-buttonUrl.setAttribute('class','btn btn-secondary')      
-buttonUrl.innerHTML = 'Read more';                 
+buttonUrl.setAttribute('class','btn btn-secondary')
+buttonUrl.innerHTML = 'Read more';
 showUrl.appendChild(buttonUrl);
-
 }
