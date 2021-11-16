@@ -19,12 +19,12 @@ gh repo clone michaeldidonato/hackednews
 3. Otherwise click the following link to try the app online: https://michaeldidonato.github.io/hackednews/
 
 ## How it works and Usage
-At the startup the app load the first 10 news calling the API, it shows title, date and button where the user will click to read the page. If you want to load more news click the button "LOAD MORE" and it will be shown others 10 news  
+At the startup the app load the first 10 news calling the API, it shows the title, date and button where the user will click to read the page. If you want to load more news click the button "LOAD MORE" and it will be shown others 10 news  
 ![alt text](https://github.com/michaeldidonato/hackednews/blob/main/img/Cattura1.JPG)
 
 ### Behind the app
 
-When we load the web page, JS calls the API https://hacker-news.firebaseio.com/v0/newstories.json through the fetch request and it gets an array of 500 IDs. Then we use the IDs to fetch every single object that will be used to catch the title, the date, the hour and the url. In the following code you'll see what  i've explained 
+When we load the web page, JS calls the API https://hacker-news.firebaseio.com/v0/newstories.json through the fetch request and it gets an array of 500 IDs. Then we use the IDs to fetch every single object that will be used to catch the title, date, hour and the url. In the following code you'll see what  i've explained: 
 
 ```js
 let response = await fetch('https://hacker-news.firebaseio.com/v0/newstories.json');
@@ -72,3 +72,9 @@ buttonUrl.innerHTML = 'Read more';
 showUrl.appendChild(buttonUrl);
 }
 ```
+
+## Licence
+Distributed under the MIT License. See LICENSE.txt for more information.
+
+## Acknowledgments
+A special thank goes to [Hacker News API](https://github.com/HackerNews/API)  that allows me to develop this amazing app and create somethig very important for me. 
