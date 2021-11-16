@@ -24,7 +24,7 @@ At the startup the app load the first 10 news calling the API, it shows title, d
 
 ### Behind the app
 
-When we load the web page, JS calls the API through the fetch request and it gets an array of 500 ID. Then we use the ID's to fetch every single object that will be used to catch the title, the date, the hour and the url. In the following code you'll see what  i've explained 
+When we load the web page, JS calls the API https://hacker-news.firebaseio.com/v0/newstories.json through the fetch request and it gets an array of 500 ID. Then we use the ID's to fetch every single object that will be used to catch the title, the date, the hour and the url. In the following code you'll see what  i've explained 
 
 ```js
 let response = await fetch('https://hacker-news.firebaseio.com/v0/newstories.json');
