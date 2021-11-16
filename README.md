@@ -4,10 +4,10 @@ This web app allows you to read and load the most recent tecnology news from all
 
 ## Built with:
 * HTML/CSS
-* MDBootstrap 
-* JS
-* Hacker News API
-* Google Font 
+* [MDBootstrap](https://mdbootstrap.com/)
+* JavaScript
+* [Hacker News API](https://github.com/HackerNews/API) 
+* [Google Font](https://fonts.google.com/) 
 
 ## Istallation
 1. Clone the repo: 
