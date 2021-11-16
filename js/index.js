@@ -17,7 +17,7 @@ async function getValue() {
         createCards(resObj.title, resObj.url, resObj.time);
       }
     else {
-      alert("HTTP-Error: " + response.status)
+      alert("HTTP-Error: " + article.status)
     }
   }
 }
