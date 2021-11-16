@@ -1,4 +1,4 @@
-# HACKED NEWS
+# HACKED NEWS ♾️ 
 ![alt text](https://github.com/michaeldidonato/hackednews/blob/main/img/Cattura3.JPG)
 This web app allows you to read and load the most recent tecnology news from all over the world.
 
