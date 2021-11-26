@@ -26,7 +26,7 @@ async function getValue() {
 getValue();
 
 let btn = document.querySelector('#btn');
-btn.addEventListener('click', ()=>{
+btn.addEventListener('click', ()=> {
   start = start + 10;
   end = end + 10;
   getValue();
