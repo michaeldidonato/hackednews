@@ -8,13 +8,9 @@ async function getValue() {
     let dataId = await response.json();
 
     for(; i<end; i++){
-      console.log(dataId[i]);
       let article = await fetch(`https://hacker-news.firebaseio.com/v0/item/${dataId[i]}.json`);
         if(article.ok){
           let resObj = await article.json();
-          console.log(resObj.title);
-          console.log(resObj.url);
-          console.log(resObj.time);
           createCards(resObj.title, resObj.url, resObj.time);
         }
       else {
