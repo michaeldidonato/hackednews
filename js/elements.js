@@ -1,5 +1,4 @@
 let mainDiv = document.querySelector('#divRow')
-console.log(mainDiv);
 
 function createCards(title,url,timeUnix) {
 let mainDivCard = document.createElement('div');
