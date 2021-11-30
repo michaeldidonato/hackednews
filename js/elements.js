@@ -2,7 +2,7 @@ let mainDiv = document.querySelector('#divRow')
 
 function createCards(title,url,timeUnix) {
 let mainDivCard = document.createElement('div');
-mainDivCard.setAttribute('class','col-md-4');
+mainDivCard.setAttribute('class','col-lg-4');
 mainDiv.appendChild(mainDivCard);
 
 let divCard = document.createElement('div');
