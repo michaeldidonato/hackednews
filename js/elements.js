@@ -18,7 +18,6 @@ let unixTimestamp = timeUnix;
 let milliseconds = unixTimestamp * 1000;
 let dateObject = new Date(milliseconds);
 let humanDateFormat = dateObject.toLocaleString();
-console.log(humanDateFormat);
 let showTime = document.createElement('p');
 showTime.setAttribute('class','card-text');
 showTime.innerHTML = humanDateFormat;
