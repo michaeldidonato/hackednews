@@ -11,7 +11,7 @@ async function getValue() {
       let article = await fetch(`https://hacker-news.firebaseio.com/v0/item/${dataId[i]}.json`);
         if(article.ok){
           let resObj = await article.json();
-          createCards(resObj.title, resObj.url, resObj.time);
+          createCards(resObj?.title, resObj?.url, resObj?.time);
         }
       else {
         alert("HTTP-Error: " + article.status)
