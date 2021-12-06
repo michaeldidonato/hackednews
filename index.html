@@ -1,109 +1,89 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta name='viewport'
-    content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="css/style.css">
-    <!-- Font Awesome -->
-<link
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
-rel="stylesheet"
-/>
-<!-- Google Fonts -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,300&display=swap" rel="stylesheet">
-<!-- MDB -->
-<link
-href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.css"
-rel="stylesheet"
-/>
-    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+<head>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,300&display=swap"
+    rel="stylesheet">
+  <!-- MDB -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.css" rel="stylesheet" />
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 
 
-    <title>Haked News</title>
-  </head>
+  <title>Haked News</title>
+</head>
 
-  <body>
+<body>
 
-      <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #351d48;">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            <i class="fab fa-hackerrank fa-2x" style="margin-right: 5%;"></i>
+  <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #351d48;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <i class="fab fa-hackerrank fa-2x" style="margin-right: 5%;"></i>
 
-          <small>HACKED NEWS</small>
-          </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-mdb-toggle="collapse"
-            data-mdb-target="#navbarNavAltMarkup"
-            aria-controls="navbarNavAltMarkup"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <i class="fas fa-bars"></i>
-          </button>
-          <div class="collapse navbar-collapse m-2" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-              <a class="nav-link " aria-current="page" href="#">Home</a>
-              <a class="nav-link" href="https://michaeldidonato.github.io/hackednews/">Refresh page</a>
-              <a class="nav-link" href="https://github.com/HackerNews/API">Credits</a>
+        <small>HACKED NEWS</small>
+      </a>
+      <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse m-2" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link " aria-current="page" href="#">Home</a>
+          <a class="nav-link" href="https://michaeldidonato.github.io/hackednews/">Refresh page</a>
+          <a class="nav-link" href="https://github.com/HackerNews/API">Credits</a>
 
-              <div class="d-flex align-items-center ms-lg-3">
+          <div class="d-flex align-items-center ms-lg-3">
 
-                <a
-                  class="btn btn-dark px-3"
-                  href="https://github.com/michaeldidonato"
-                  role="button"
-                  ><i class="fab fa-github"></i
-                ></a>
-              </div>
-            </div>
-
-            </div>
+            <a class="btn btn-dark px-3" href="https://github.com/michaeldidonato" role="button"><i
+                class="fab fa-github"></i></a>
           </div>
         </div>
-      </nav>
 
-      <div
-          id="intro-example"
-          class="p-5 text-center bg-image"
-          style="
+      </div>
+    </div>
+    </div>
+  </nav>
+
+  <div id="intro-example" class="p-5 text-center bg-image" style="
           background-image: url('img/hackedimg.jpg');
         ">
     <div class="mask" style="background-color: rgba(0, 0, 0, 0.6);">
       <div class="d-flex justify-content-center align-items-center h-100">
         <div class="text-white">
           <h1 class="mb-4" style="font-weight: bolder;">Latest Hacked News</h1>
-          <h4 class="mb-3">Here you will find the most recent technology news from all over the world and so much more</h4>
+          <h4 class="mb-3">Here you will find the most recent technology news from all over the world and so much more
+          </h4>
           <h4 class="mb-3" style=>Stay tuned!</h4>
         </div>
       </div>
     </div>
   </div>
 
-      <section class="container-fluid  mt-5" id="mainDiv">
-        <div class= "row" id= "divRow"></div>
-      </section>
+  <section class="container-fluid  mt-5" id="mainDiv">
+    <div class="row" id="divRow"></div>
+  </section>
 
 
-        <div class="d-flex justify-content-center align-items-center">
-          <button type="button" class="btn-lg btn-info m-4" id="btn">LOAD MORE</button>
-        </div>
-
-
-
+  <div class="d-flex justify-content-center align-items-center">
+    <button type="button" class="btn-lg btn-info m-4" id="btn">LOAD MORE</button>
+  </div>
 
 
 
-    <script src="js/index.js"></script>
-    <script src="js/elements.js"></script>
-    <!-- MDB -->
-<script
-type="text/javascript"
-src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.js"
-></script>
-  </body>
+
+
+
+  <script src="js/index.js"></script>
+  <script src="js/elements.js"></script>
+  <!-- MDB -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.js"></script>
+</body>
+
 </html>
